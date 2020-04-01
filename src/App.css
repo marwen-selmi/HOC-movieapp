@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+.Search-Movie {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  margin-bottom: 10px;
+}
+.Search-Movie input {
+  width: 500px;
+  height: 20px;
+  /* border: 1px solid blue; */
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MovieList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MovieCard {
+  height: 400px;
+  width: 350px;
+  border: 1px solid grey;
+  border-radius: 12px;
+  margin: 10px 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MovieCard img {
+  height: 250px;
+  width: 100%;
+}
+
+.gold {
+  color: gold;
+}
+/* ************************AddMovie component******************************* */
+.add-btn-modal {
+  height: 150px;
+  width: 200px;
+  font-size: 3em;
+  background-color: blue;
+  cursor: pointer;
+}
+.Modal {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 700px;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Modal form {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Modal input {
+  width: 450px;
+  border-radius: 10px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.btn-container button {
+  border-radius: 10px;
+  color: aliceblue;
+  width: 150px;
+}
+.btn-container :nth-child(1) {
+  background-color: green;
+}
+
+.btn-container :nth-child(2) {
+  background-color: red;
+}
+
+/* ******************LoadingSpinner************************************* */
+.spinner {
+  display: flex;
+  justify-content: center;
 }
